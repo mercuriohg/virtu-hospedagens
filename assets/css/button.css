@@ -1,0 +1,17 @@
+li{
+    padding: 10px;
+    cursor: pointer ;
+    border-radius: 4px;
+}
+li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    transition: width 0.8s ease;
+    background-color: rgb(165, 92, 4);
+}
+li:hover::after{
+    width: 100%;
+    border: 0.6px solid rgb(165, 92, 4);
+}

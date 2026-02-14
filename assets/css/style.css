@@ -1,0 +1,511 @@
+@import url(../css/card.css);
+@import url(../css/footer.css);
+@import url(../css/button.css);
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-attachment: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/*Header*/
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgb(83, 83, 223),
+    rgb(10, 10, 138),
+    rgb(29, 29, 153),
+    rgb(10, 10, 134),
+    rgb(93, 93, 238)
+  );
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  /*background-color: rgba(10, 95, 207, 0.849);*/
+}
+#nav-list ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+.link-nav {
+  color: rgb(226, 141, 14);
+  text-decoration: none;
+}
+label {
+  cursor: pointer;
+  margin-left: 6px;
+}
+#logo {
+  margin: 0;
+}
+#log {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+/*Estilos para a caixa de login*/
+#close-wind {
+  cursor: pointer;
+  background-color: rgba(105, 17, 1, 0.603);
+  padding: 15px;
+  color: white;
+  border-radius: 50%;
+}
+#close-wind:hover {
+  background-color: rgba(216, 7, 7, 0.486);
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+#header-log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#title-log {
+  color: white;
+  margin-left: 30px;
+}
+
+.entrytogo {
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin: auto;
+  width: 200px;
+  background-color: #424debce;
+  padding: 15px;
+  color: rgb(24, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.entrytogo a {
+  font-size: 1.18em;
+  color: rgba(207, 120, 6, 0.904);
+
+  text-decoration: none;
+}
+#div-login {
+  background-image: url(../img/fundolog.png);
+  position: fixed;
+  left: 40%;
+  top: 10%;
+  z-index: 1000;
+  border-radius: 20px;
+  width: 500px;
+  height: 570px;
+  background-color: rgb(5, 7, 112);
+  margin: 200px auto;
+}
+span {
+  color: white;
+  font-weight: bold;
+}
+.cont-log {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  margin-left: 50px;
+  input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  &:hover {
+    border: none;
+  }
+}
+.cont-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#button-style {
+  background-color: #424debce;
+  color: rgb(255, 137, 3);
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  width: 50%;
+  border-radius: 5px;
+}
+#title-log {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#msg-login {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -30px);
+  background: #2ecc7083;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+#msg-login.ativo {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+/*CONTEÚDO PRINCIPAL (MAIN)*/
+#div-hospds {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  h2 {
+    text-align: center;
+  }
+}
+#main-content {
+  margin: 0;
+  width: 100%;
+}
+#div-layout-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#sobre {
+  background-image: url(../img/sobresection.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: rgba(99, 95, 95, 0.349);
+  background-size: cover;
+  height: 60em;
+  padding: 3.8em;
+  color: rgb(20, 20, 20);
+  p {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    font-size: 25px;
+  }
+}
+#button-msg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+#msg-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#word-loc-active {
+  display: none;
+  font-size: 1.5em;
+  color: rgb(20, 20, 20);
+}
+h3 {
+  text-align: center;
+  font-size: 2em;
+}
+/*Imagens*/
+#fotos-amostra {
+  display: flex;
+  gap: 20px;
+  height: 500px;
+  margin: 40px auto;
+  width: 50%;
+  justify-content: center;
+}
+#container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#img-grid {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+#img-mostra {
+  background-image: url(../img/product/quarto-hotel.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 50%;
+  height: 500px;
+}
+#img-mostra:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+#mostra-img1 {
+  background-image: url(../img/product/quarto-cinza.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#mostra-img1:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#mostra-img2 {
+  background-image: url(../img/product/quarto-com-quadro.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+#mostra-img2:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#mostra-img3 {
+  background-image: url(../img/product/quarto-chique.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#mostra-img3:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#mostra-img4 {
+  background-image: url(../img/product/quarto-azul.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+#mostra-img4:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+#mostra-quartos {
+  margin-top: 40px;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+}
+/*Medias Screens*/
+@media (max-width: 600px) {
+  /*Celular pequeno*/
+  body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: scroll;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #header {
+    flex-direction: space-around;
+    gap: 10px;
+  }
+  .grid-hospds {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  .card-hospds {
+    width: 100%;
+  }
+  .img-card {
+    height: 200px;
+  }
+  
+  #nav-list ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #div-login {
+    width: 60%;
+    left: auto;
+    top: 20%;
+    height: 580px;
+  }
+  .cont-log {
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+  #word-loc {
+    display: none;
+  }
+  
+  #word-loc-active {
+    display: block;
+    text-align: center;
+  }
+  
+  #fotos-amostra {
+    width: 90%;
+    margin: auto;
+}
+}
+@media (max-width: 768px) {/*Celular*/
+  body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-attachment: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  } 
+  #header {
+    flex-direction: space-around;
+    gap: 10px;
+  }
+  .grid-hospds {
+    grid-template-columns: 1fr 1fr;
+    width: 5%;
+  }
+  .card-hospds {
+    width: 100%;
+  }
+  .img-card {
+    height: 200px;
+  }
+
+  #nav-list ul {
+    display: none;
+    flex-direction: colum;
+    gap: 10px;
+  }
+  #div-login {
+    width: 60%;
+    top: 20%;
+  }
+  #word-loc {
+    display: none;
+  }
+  #word-loc-active {
+    display: block;
+    text-align: center;
+  }
+  #fotos-amostra {
+    width: 90%;
+    margin: auto;
+}
+}
+
+@media (max-width: 992px) {
+  /*Tablet*/
+  body{
+  height: 100%;
+  margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-attachment: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+  #header {
+    flex-direction: space-around;
+    gap: 10px;
+  }
+  .grid-hospds {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  .card-hospds {
+    width: 100%;
+  }
+  .img-card {
+    height: 200px;
+  }
+  #nav-list ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #div-login {
+    left: 5%;
+    top: 20%;
+  }
+  #word-loc {
+    display: none;
+  }
+  #word-loc-active {
+    display: block;
+    text-align: center;
+  }
+  #fotos-amostra {
+    width: 90%;
+    margin: auto;
+  }
+
+}
+@media (max-width: 1200px) { /*Desktop*/
+  body{
+  height: 100%;
+  margin: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-attachment: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+  #header {
+    flex-direction: space-around;
+    gap: 10px;
+  }
+   #word-loc {
+    display: none;
+  }
+  #word-loc-active {
+    display: block;
+    text-align: center;
+  }
+  #div-login {
+    left: 28%;
+    top: 20%;
+  }
+  .grid-hospds {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  .card-hospds {
+    width: 100%;
+  }
+  .img-card {
+    height: 200px;
+  }
+  
+}

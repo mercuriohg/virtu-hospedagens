@@ -1,0 +1,95 @@
+.grid-hospds {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  gap: 30px;
+  padding: 40px 60px;
+}
+
+.card-hospds {
+  background: linear-gradient(180deg, #0a0f3c, #121a5e);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card-hospds:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem do card */
+.img-card {
+  height: 180px;
+  background-image: url("../img/hotel-exemplo.jpg"); /* troque pela sua */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Conteúdo do card */
+.info-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-preco .valor {
+  font-size: 1.4rem;
+  color: #ffb703;
+  font-weight: bold;
+}
+
+.info-pais .loc {
+  font-size: 1rem;
+  color: #eaeaea;
+  letter-spacing: 1px;
+}
+
+.info-buy {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-buy .pay {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+.info-buy .pix {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.info-buy i {
+  margin-right: 4px;
+}
+
+
+
+@media (max-width: 1224px) { /*Tablet*/
+  #word-loc{
+    display: none;
+  }
+   #word-loc-active{
+    display: block;
+    text-align: center;
+  }
+  .grid-hospds {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  .card-hospds {
+    width: 100%;
+  }
+  .img-card {
+    height: 200px;
+  }
+}

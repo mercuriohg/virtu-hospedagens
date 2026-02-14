@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtu Hospedagens</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.1/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon/favico.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="corpo">
+    <header id="header">
+      <div id="msg-login">
+        <p>Login efetuado com sucesso</p>
+      </div>
+      <img
+        src="assets/img/virtuhospd.png"
+        alt="Loja fictícia de hospedagens"
+        id="logo"
+        height="125em"
+      />
+      <nav id="nav-list">
+        <ul>
+          <li><a href="#" class="link-nav">Descubra</a></li>
+          <li><a href="#hospedagens" class="link-nav">Hospedagens</a></li>
+          <li><a href="#contatos" class="link-nav">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="login" class="link-nav"
+        ><i id="tagprinci" class="fa-solid fa-user"></i
+        ><span id="log">Login</span></a
+      >
+    </header>
+     <div id="div-login" style="display: none">
+        <div id="header-log">
+          <h2 id="title-log">Login Virtu</h2>
+          <i class="fa-solid fa-xmark" id="close-wind"></i>
+        </div>
+        <form>
+          <div class="cont-log">
+            <span>Usuário:</span>
+            <input type="text" name="username" id="user" required />
+            <div id="msg"></div>
+          </div>
+          <div class="cont-log">
+            <span>Email:</span>
+            <input type="email" name="email" id="email" required />
+            <div id="msg-email"></div>
+          </div>
+          <div class="cont-log">
+            <span>Senha:</span>
+            <input type="password" name="password" id="senha" required />
+          </div>
+          <div class="cont-button">
+            <button type="submit" id="button-style">Entrar</button>
+          </div>
+          <div class="cadastro-outra">
+            <div class="entrytogo"><a href="#">Entrar com Google</a><i class="fa-brands fa-google"></i></div>
+            <div class="entrytogo"><a href="#">Entrar com Facebook</a><i class="fa-brands fa-facebook"></i></div>
+          </div>
+        </form>
+      </div>
+    <main id="main-content">
+      
+      <div id="div-layout-main">
+        <div id="div-hospds">
+          <h2>Hospedagens Disponíveis</h2>
+          <h2 id="word-loc">Localização</h2>
+        </div>
+        <section id="hospedagens">
+          <div class="grid-hospds">
+            <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  >
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+             <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  >
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <br><span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+            <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  >
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <br><span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+            <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  >
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <br><span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+            <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  >
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <br><span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+            <div class="card-hospds">
+              <div class="img-card"></div>
+              <div class="info-card">
+                <div class="info-preco">
+                  <span class="valor"> R$ 1.999,90</span
+                  ></i>
+                </div>
+                <div class="info-pais"><span class="loc">Guatemala</span></div>
+                <div class="info-buy"><span class="pay"> <i class="fa-solid fa-credit-card"></i>10x</span> ou <br><span class="pix"> <i class="fa-brands fa-pix"></i>PIX</span></div>
+              </div>
+            </div>
+          </div>
+          <h2 id="word-loc-active">Localização</h2>
+      </div>
+      </section>
+      <section id="sobre">
+        <h3>Sobre a Virtu</h3>
+        <p>
+          Virtu é uma empresa de hospedagem de sites que oferece serviços de
+          alta qualidade para clientes em todo o mundo. Com uma infraestrutura
+          robusta e uma equipe de suporte dedicada, a Virtu garante que seus
+          clientes tenham uma experiência de hospedagem confiável e eficiente. A
+          empresa oferece uma variedade de planos de hospedagem, incluindo
+          hospedagem compartilhada, VPS e servidores dedicados, para atender às
+          necessidades de diferentes tipos de clientes, desde pequenos blogs até
+          grandes empresas. Além disso, a Virtu se destaca por seu compromisso
+          com a segurança e a privacidade dos dados dos clientes, utilizando
+          tecnologias avançadas para proteger as informações armazenadas em seus
+          servidores.
+        </p>
+      </section>
+      <section id="mostra-quartos">
+        <h2>Veja alguns quartos</h2>
+        <div id="fotos-amostra" >
+          <div id="img-mostra">
+          </div>
+          <div id="container-grid" style="display: grid; grid-template-columns: 1fr 1fr; width: 50%; margin: 5px;">
+            <div id="mostra-img1" class="img-grid" style="background-color: rgb(75, 75, 177); width: 100%; height: 100%;"></div>
+             <div id="mostra-img2" class="img-grid" style="background-color: rgb(75, 75, 177); width: 100%; height: 100%;"></div>
+              <div id="mostra-img3" class="img-grid" style="background-color: rgb(75, 75, 177); width: 100%; height: 100%;"></div>
+               <div id="mostra-img4" class="img-grid" style="background-color: rgb(75, 75, 177); width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </section>
+      <div id="button-msg"><abbr title="Nos Chame no Whatsapp"><button id="msg-button"><img src="assets/img/icons8-whatsapp.svg" style="background-color: rgb(21, 87, 21); padding: 14px; border-radius: 50% ;" alt="Imagem Whatsapp"></button></abbr></div>
+     
+    </main>
+    <footer id="main-footer">
+     <div id="container-foot"> 
+      <div id="contatos"><div class="header-foot">
+        <h2>Contatos</h2>
+      </div>
+      <span>(21) 99999-9999</span><br>
+      <span>Instagram <i class="fa-brands fa-instagram"></i>
+      </span><br><span>Linkedin <i class="fa-brands fa-linkedin"></i></span><br><span>Github <i class="fa-brands fa-github"></i></span>
+     </div>
+      <div id="localizacao"><div class="header-foot">
+        <h2>Localização</h2>
+      </div>
+      <span>Rua Fictícia, 123 - Bairro Imaginário, Cidade Exemplo - Estado, País</span><br><span>CEP: 12345-678</span><br><span>Email: virtuhospedagens@gmail.com
+     </div>
+    </footer>
+    <script type="module" src="assets/src/controllers/script.js"></script>
+    <script type="module" src="assets/src/auth/log.js"></script>
+  </body>
+</html>
